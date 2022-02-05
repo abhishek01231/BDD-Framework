@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="tests">
+  <test name="Regression2(failed)" parallel="tests">
+    <classes>
+      <class name="testrunner.TestRunner">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="tearDownClass"/>
+          <include name="driverQuit"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunner.TestRunner -->
+      <class name="testrunner.TestRunnerParallel">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="driverQuit"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunner.TestRunnerParallel -->
+    </classes>
+  </test> <!-- Regression2(failed) -->
+  <test name="Regression1(failed)" parallel="tests">
+    <classes>
+      <class name="testrunner.TestRunner">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="driverQuit"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunner.TestRunner -->
+      <class name="testrunner.TestRunnerParallel">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="driverQuit"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunner.TestRunnerParallel -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
